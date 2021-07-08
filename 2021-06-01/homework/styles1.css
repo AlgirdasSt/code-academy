@@ -1,0 +1,9 @@
+.circle {
+    background: #ECF5E4;
+    border-radius: 50%;
+    height: 70px;
+    position: relative;
+    width: 70px;
+    background-image: linear-gradient(white, white), 
+                    linear-gradient(30deg, red 36%, lightgrey 30%),
+                    linear-gradient(210deg, green 25%, lightgrey 30%);

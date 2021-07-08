@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<h1>Registracija i kursus
+		</h1>
+		<hr>
+
+		<form action="/name.php">
+  			<label for="fname">Vardas:</label>
+ 			<input type="text" id="fname"	>
+		<h2>
+			Programavimo kalba:
+		</h2>
+
+		<form action="/language.php">
+			<label for="C++">C++</label>
+			<input  type="radio" id="C++" name="Kalba" value="C++"for="C++">
+			<br>	
+			<label for="PHP">PHP</label>
+			<input type="radio" id="PHP" name="Kalba" value="PHP"for="PHP"> 
+			<br>
+			<label for="Python">Python</label>
+			<input type="radio" id="Python" name="Kalba" value="Python"for="Python">
+			<br>
+	
+		<h2>Papildoma informacija</h2>
+
+			<form action="/text box.php">
+  			<textarea name="message" style="width:300px; height:60px;color: grey">Pvz. : turite C++ programavimo patirties
+  			</textarea>
+  			<br>
+  			
+		</form>
+
+<h3>Slaptazodis:</h3>
+
+			<form action="/password.php">
+  			<input type="text" id="password" name="password" class="form-group">
+      			<select class="form-control" id="sel1">
+        			<option>1</option>
+        			<option>2</option>
+        			<option>3</option>
+        			<option>4</option>
+     			</select>
+  			<input type="hidden" id="custId" name="custId" value="3487">
+
+			</form>
+			<br>	
+		<input type="submit" value="Siusti">
+	</main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.background {
+	background-color: #FFDEAD ;
+}
+
+.first_text{
+	border: solid 3px #FF0000 ;
+	color: orange;
+	background-color:saddlebrown ;
+	margin-bottom: 20px;
+	width: 400px;
+	padding: 20px;
+	text-indent: 30px;
+	text-align: justify;
+}
+
+.second_text{
+	border: solid 3px #FF0000;
+	color: orange;
+	background-color:saddlebrown ;
+	width: 400px;
+	padding: 20px;
+	text-indent: 30px;
+	text-align: justify;
+}
