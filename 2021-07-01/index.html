@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Paspaudus mygtuką iškvieskite<span style="color:#ad1531"> alert('Hello World!')</span>
+			</p>
+		</div>
+		<div class="p-2_bottom">
+			<div class='text-center'>
+				<button type="button" class="btn btn-outline-primary" style= 'color:#cccdcf' onclick= "alert('Hello world!')">Click on me</button>
+			</div>
+		</div>
+	</div>
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Įvestai reikšmėi priklausomai nuo paspausto mygtuko keičiame reigstrą (Didėles/Mažos raidės)
+			</p>
+		</div>
+		<div class="p-2_bottom">
+			<div class="input-group">
+				<input type="text" id='text_input' class="form-control" placeholder="Fill me in">
+				<div class="input-group-append" id="button-addon4">
+					<button class="btn btn-outline-secondary" type="button" onclick= 'upper()'>To Upper Case</button>
+					<button class="btn btn-outline-secondary" type="button" onclick= 'lower()'>To Lower Case</button>
+					<button class="btn btn-outline-secondary" type="button" onclick= 'upperFirst()'>First Upper Case</button>
+					<button class="btn btn-outline-secondary" type="button" onclick= 'lowerFirst()'>First Lower Case</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Paspaudus mygtuką patikrinkite įvestas reikšmes ir jeigu reikia parodykite klaidų pranešimus
+			</p>
+			<ul>
+				<li>element show/hide</li>
+				<li>class add/remove</li>
+			</ul>
+		</div>
+		<div class="p-2_bottom">
+			<form>
+				<div class="form-group row">
+					<label for="inputEmail" class="col-2 col-form-label"> Email</label>
+					<div class="col-10">
+						<input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+					</div>
+				</div>
+				<br>
+				<div class="form-group row">
+					<label for="inputPhoneNumber" class="col-2 col-form-label"> Phone number </label>
+					<div class="col-10">
+						<input type="phoneNumber" class="form-control" onChange="phonenumbe_2(this.value)" id="inputPhoneNumber" placeholder="Enter Phone number">
+					</div>
+				</div>
+				<br>
+				<div class="form-group row">
+					<div class="col-2"></div>
+					<div class="col-10">
+						<button type="Save" class="btn btn-primary">Save</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Pazpaudžius mygtuką užblokokite/atblokokite <span style="color:#ad1531"> input</span>
+			</p>
+		</div>
+		<div class="p-2_bottom">
+			<div class="input-group">
+				<button class="btn btn-outline-secondary" style="border-color: red; color: red" type="button" onclick= 'readonly()' >Block</button>
+				<input type="text" id='fill_me_in' class="form-control" placeholder="Fill me in">
+				<div class="input-group-append" id="button-addon4">
+					<button class="btn btn-outline-secondary" style="border-color: green; color: green" type="button" onclick= 'unblock()'>Unblock</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Užvedus ant paveiksliuko pakeiskite jį
+			</p>
+			<ul>
+				<li>https://i.imgur.com/PLDVxza.jpg</li>
+				<li>https://i.imgur.com/0DElr0H.jpg</li>
+			</ul>
+		</div>
+		<div class="p-2_bottom">
+			<div class="hide">
+				
+			</div>
+		</div>
+	</div>
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Paspaudžius ant mygtuko turi "iškristi" meniu su punktais. Paspaudžius pinktą turi įvykti veiksmas
+			</p>
+		</div>
+		<div class="p-2_bottom">
+			<div class="form-group">
+    			<label for="exampleFormControlTextarea1"></label>
+    				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Dicta reprehenderit rerum qui maiores perspiciatis! Ab saepe libero unde possimus dolore facilis repellat sit ex debitis hic officiis animi rem, quibusdam!
+    				</textarea>
+  			</div>
+
+			<div class="row">
+				<select class="col-2" aria-label="Default select example" id= 'cursors' onchange="cursors(this.value)">
+					<option selected disabled="">Cursors</option>
+					<option value="1">None</option>
+					<option value="2">Auto</option>
+				</select>
+				<select class=" col-2" aria-label="Default select example" id='colors' onchange="colors(this.value)">
+					<option selected disabled="">Colors</option>
+					<option value="1">red</option>
+					<option value="2">green</option>
+					<option value="2">black</option>
+				</select>
+				<button class= 'btn col-2 btn-outline-secondary' onclick='resetAll()'>Reset all</button>
+
+  			</div>
+  		</div>
+	</div>
+	<div class="d-grid">
+		<div class="p-2_top">
+			<p>
+				Paspaudžius mygtuką parodikite informaciją apie save modalineme lange
+			</p>
+		</div>
+		<div class="p-2_bottom">
+			<button type="button" class="btn btn-primary text-center m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				Launch modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Modal pavadinimas</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							Info apie mane. No info about me
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>
